@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Patient Information</title>
+    <script src="getInfo.js"></script>
+    <style>
+      .btn-enabled {
+        height: 35px;
+        width: 150px;
+        border-radius: 5px;
+        border: solid 1px black;
+        font-weight: bold;
+        background: lightblue;
+        cursor: pointer;
+      }
+
+      .btn-enabled:active {
+        background: grey;
+      }
+
+      span, li {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+
+    <button id='btn-getInfo' class='btn-enabled'>Get Patient Info</button>
+
+    <p>Name of patient: <span id='patientName'></span></p>
+    <p>Organization name: <span id='organizationName'></span></p>
+    <p>Gender: <span id='gender'></span></p>
+    <p>Number of conditions they have: <span id='numConditions'></span></p>
+    <p>List of all conditions: </p>
+    <ul id='conditions'></ul>
+
+  </body>
+</html>
